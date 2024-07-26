@@ -1,0 +1,1 @@
+module.exports=async function(t,a,e,s){try{const{id:s,userInfo:o}=e;console.log("updateHandler ",JSON.stringify(e),JSON.stringify(o));const n=await a.collection("user_list").doc(s).update({data:{userInfo:o}});t.data=n.data,t.message="更新成功"}catch(a){t.code=s.SERVER_ERROR,t.message="服务器出错"}};

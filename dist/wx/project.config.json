@@ -1,0 +1,34 @@
+{
+  "appid": "wx1d59f48128f45869",
+  "projectname": "保妥适AR",
+  "compileType": "miniprogram",
+  "libVersion": "3.0.1",
+  "miniprogramRoot": "miniprogram/",
+  "srcMiniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "functions/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "postcss": true,
+    "packNpmRelationList": [],
+    "ignoreUploadUnusedFiles": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "minified": true,
+    "es6": false,
+    "enhance": false,
+    "coverView": false,
+    "showShadowRootInWxmlPanel": false
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "condition": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
+}

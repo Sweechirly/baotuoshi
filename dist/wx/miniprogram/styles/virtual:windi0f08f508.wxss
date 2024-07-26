@@ -1,0 +1,48 @@
+/* windicss(hmr:7:/Users/xinxuetao/sensetime/study/baotuoshi/src/miniprogram/pages/index/index.mpx) */
+/* windicss layer base */
+
+/* windicss layer components */
+
+/* windicss layer utilities */
+.flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-col {
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.items-center {
+  -webkit-align-items: center;
+          align-items: center;
+}
+.justify-center {
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.justify-between {
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.flex-1 {
+  -webkit-flex: 1 1 0%;
+          flex: 1 1 0%;
+}
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vh;
+}
+.h-10-d-5px {
+  height: 21rpx;
+}
+.relative {
+  position: relative;
+}
+.w-screen {
+  width: 100vw;
+}
+.w-6px {
+  width: 12rpx;
+}

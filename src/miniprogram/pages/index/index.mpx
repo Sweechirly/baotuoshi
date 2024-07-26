@@ -1,0 +1,40 @@
+<template>
+  <view
+    class="home-bg w-screen h-screen flex flex-col justify-between relative"
+  >
+    <nav title=""></nav>
+    <view class="test" bindtap="fuck">fuck</view>
+    <image
+      mode="widthFix"
+      src="https://wxmarketurl-1258344699.cos.ap-guangzhou.myqcloud.com/1254418846/o1sbG5XaCV4XqkKV67UGAXy4t57g/596d6bb0-1507-4cfa-98c1-75b1c83c8082"
+    ></image>
+    <canvas type="2d" id="myCanvas"></canvas>
+  </view>
+</template>
+
+<script lang="ts" src="./index.ts" />
+
+<script type="application/json">
+  {
+    "useingComponents": {
+      "nav": "../../components/nav/nav"
+    },
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "disableScroll": true
+  }
+</script>
+
+<style lang="scss" scoped>
+  .home-bg {
+    background: url('../../assets/index/bg.png') no-repeat center center;
+    background-size: cover;
+  }
+
+  .test {
+    position: absolute;
+    top: 200px;
+    z-index: 333;
+    color: #fff;
+  }
+</style>

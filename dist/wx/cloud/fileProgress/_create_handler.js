@@ -1,0 +1,1 @@
+module.exports=async function(a,e,s,t){try{const s={progress:0,error:!1,message:""},t=await e.collection("transfer").add({data:s});a.data=t,a.message="创建成功"}catch(e){a.code=t.SERVER_ERROR,a.message="服务器出错"}};

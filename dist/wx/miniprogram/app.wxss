@@ -1,0 +1,19 @@
+@import "./styles/virtual:windi0f08f508.wxss";
+
+
+
+
+  /*此处编写全局样式*/
+cover-image, cover-view, movable-area, movable-view, scroll-view, swiper, swiper-item, view, icon, progree, rich-text, text, button, checkbox, checkbox-group, editor, form, input, label, picker, picker-view, picker-view-column, radio, radio-group, slider, switch, textarea, navigator, audio, camera, image, live-player, live-pusher, video, map, canvas {
+}
+button {
+    border-radius: 0;
+    padding: 0;
+}
+button:after {
+    border-radius: 0;
+    content: none;
+}
+button::after {
+    border: none;
+}

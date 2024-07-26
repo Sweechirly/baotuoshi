@@ -1,0 +1,1 @@
+module.exports=async function(e,o,a,t){try{const a=await o.collection("user_list").where({_openid:e.data._openid}).get();console.log(`登录：${JSON.stringify(a)}`),a.data?.length?e.data={...e.data,...a.data[0]}:(e.code=t.NOT_FOUND_ERROR,e.message="未注册")}catch(o){console.error("login error",o),e.code=t.SERVER_ERROR,e.message="服务器错误"}};

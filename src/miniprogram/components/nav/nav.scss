@@ -1,0 +1,79 @@
+@import '../../assets/style/index.scss';
+
+.nav-bar {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  box-sizing: content-box;
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+// .title {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   font-weight: 600;
+//   pointer-events: none;
+// }
+
+.nav-btn-box {
+  box-sizing: content-box;
+  display: flex;
+  width: 50px;
+  height: 100%;
+  align-items: center;
+
+  .back-btn {
+    width: 6px;
+    height: 10.5px;
+
+    background: url(../../assets/icons/arrow-left-btn.png) no-repeat center
+      center;
+  }
+
+  .split-line {
+    width: 0.5px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  &.noBack {
+    background-color: none !important;
+    border: none !important;
+    width: 30px;
+
+    .back-btn,
+    .split-line {
+      display: none;
+    }
+  }
+}
+
+.dark {
+  color: #efefef;
+
+  .nav-btn-box {
+    background: rgba(255, 255, 255, 0.75);
+    border: 0.5px solid #efefef;
+
+    .back-btn {
+      background-image: url(../../assets/icons/arrow-left-black-btn.png);
+    }
+
+    .split-line {
+      background: #b4b4b4;
+    }
+  }
+}
+
+.ml-50 {
+  margin-left: vpx(100);
+}

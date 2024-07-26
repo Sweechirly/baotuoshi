@@ -1,0 +1,43 @@
+<template>
+  <view
+    class="nav-bar {{theme}} flex"
+    wx:style="color:{{color}};top: {{navStyle.marginTop}}px;height: {{navStyle.height}}px;line-height:{{navStyle.height}}px;padding-left:21px;"
+  >
+    <view
+      class="nav-btn-box flex items-center justify-between"
+      wx:class="{{ {noBack: !canBack}}}"
+    >
+      <navigator
+        class="flex flex-1 h-full items-center justify-center"
+        open-type="navigateBack"
+      >
+        <image
+          wx:if="{{theme === 'light'}}"
+          src="../../assets/icons/arrow-left-btn.png"
+          class="w-6px h-10.5px"
+        ></image>
+        <image
+          wx:else
+          src="../../assets/icons/arrow-left-black-btn.png"
+          class="w-6px h-10.5px"
+        ></image>
+      </navigator>
+      <slot></slot>
+    </view>
+    <view class="title flex-1">
+      {{ title }}
+    </view>
+  </view>
+  <view
+    style="height: {{navStyle.height + navStyle.marginTop + navStyle.marginBottom}}px;width:100wv;pointer-events:none;"
+  ></view>
+</template>
+<script lang="ts" src="./nav.ts"/>
+<style lang="scss" src="./nav.scss" scoped />
+<script type="application/json">
+  {
+    "component": true,
+    "styleIsolation": "apply-shared",
+    "usingComponents": {}
+  }
+</script>
